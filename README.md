@@ -40,7 +40,15 @@ The Output that will be given for running the code available in the main  of the
 ![SelectRes](https://user-images.githubusercontent.com/65030802/151703708-f69dace9-c93c-4cbe-8194-d74d21913873.png)
 
 
-This output gathered the data from the Query that extracted the adequate informations from the table and gave the following : 
+This output gathered the data from the Query that was given in the code to extract the adequate informations from the table and give the following :
+
+![DataQuery](https://user-images.githubusercontent.com/65030802/151703938-17c3613e-64f6-4365-83d2-1eaea6e0d3ac.png)
+
+
+
+Finally, It is important to close the connection  to release any other database resources (cursors, handles, etc.) the connection may be holding on to with this instruction : connection.close();
+
+
 
 
 
