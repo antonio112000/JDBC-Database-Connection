@@ -18,8 +18,23 @@ First we need to import java.sql.Statement and java.sql.ResultSet;
 To insert in the table, run these instructions :
 String Sql = "INSERT INTO MatieresEsib (Code, Nom_Matiere, Enseignant,Type_Genie)" + "VALUES ('020GDEES4' ,'Gestion des données d entreprise', 'Rima KILANY CHAMOUN','CCE')";
 Statement statement = connection.createStatement();
-ResultSet result= statement.executeQuery(Sql);
+ResultSet result= statement.executeUpdate(Sql);
 
 After inserting many rows , the table now looks like this: 
 
 ![PostgresTable](https://user-images.githubusercontent.com/65030802/151701130-96385616-3cf5-4ba0-aa67-f34302095b35.png)
+
+
+SELECT Query Example : 
+
+Now let's try to Select from the table all the rows that contains "'Rima KILANY CHAMOUN'".
+For that, we executed these instructions : 
+
+String Sql= "SELECT * FROM matieresesib WHERE enseignant='Rima KILANY CHAMOUN'";
+Statement statement = connection.createStatement();
+ResultSet result= statement.executeQuery(Sql);
+
+
+The Output that will be given for running the code available in the main  of the "ConnectDataBase" Class is : 
+
+
