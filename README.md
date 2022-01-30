@@ -28,7 +28,7 @@ After inserting many rows , the table now looks like this:
 SELECT Query Example : 
 
 Now let's try to Select from the table all the rows that contains "'Rima KILANY CHAMOUN'".
-For that, we executed these instructions : 
+For that, i executed these instructions : 
 
 String Sql= "SELECT * FROM matieresesib WHERE enseignant='Rima KILANY CHAMOUN'";
 Statement statement = connection.createStatement();
@@ -47,6 +47,9 @@ This output gathered the data from the Query that was given in the code to extra
 
 
 Finally, It is important to close the connection  to release any other database resources (cursors, handles, etc.) the connection may be holding on to with this instruction : connection.close();
+
+
+N.B:The versions used are :  PostgreSQL 14.1 , and IntelliJ Idea Edititon 2021.2.1
 
 
 
