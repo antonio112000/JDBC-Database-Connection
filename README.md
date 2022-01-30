@@ -37,4 +37,10 @@ ResultSet result= statement.executeQuery(Sql);
 
 The Output that will be given for running the code available in the main  of the "ConnectDataBase" Class is : 
 
+![SelectRes](https://user-images.githubusercontent.com/65030802/151703708-f69dace9-c93c-4cbe-8194-d74d21913873.png)
+
+
+This output gathered the data from the Query that extracted the adequate informations from the table and gave the following : 
+
+
 
